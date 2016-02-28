@@ -1,0 +1,15 @@
+<ion-view title="Resultado" class="bar-positive">
+  <ion-content overflow-scroll="true" padding="true" class="has-header">
+    <h1>Resultado</h1>
+
+    <div class="list list-inset">
+      <div class="item"><b>IMC: </b>{{ imc | number:2 }}</div>
+      <div class="item"><b>Faixa: </b> {{ faixa }}</div>
+    </div>
+
+    <h2>Tabela de IMC</h1>
+    <div ng-include="'templates/tabelaimc.html'"></div>
+
+    <button ui-sref="calculo" class="button button-block button-positive" type="button">Outro calculo</button>
+  </ion-content>
+</ion-view>

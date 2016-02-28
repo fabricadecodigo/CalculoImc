@@ -1,0 +1,19 @@
+<ion-view title="Cálculo de IMC" class="bar-positive">
+  <ion-content overflow-scroll="true" padding="true" class="has-header">
+    <h1>Cálculo</h1>
+    <p>Preencha os campos abaixo para calcular seu IMC</p>
+
+    <form class="list" ng-submit="calcular(dados)">
+      <label class="item item-input" name="peso">
+        <span class="input-label">Peso</span>
+        <input type="number" step="0.01" min="0" placeholder="Peso em kg" ng-model="dados.peso">
+      </label>
+      <label class="item item-input" name="altura">
+        <span class="input-label">Altura</span>
+        <input type="number" step="0.01" min="0" placeholder="Altura em metros" ng-model="dados.altura">
+      </label>
+
+      <button class="button button-block button-positive" type="submit">Calcular</button>
+    </form>
+  </ion-content>
+</ion-view>
